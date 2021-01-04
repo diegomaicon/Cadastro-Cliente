@@ -1,0 +1,17 @@
+<clientXML>
+<clientXML>
+ <nome>ewr</nome>
+ <cpf>12345678909</cpf>
+ <identidade></identidade>
+ <telefone></telefone>
+ <email>diego@diego</email>
+ <endereco>
+   <cep></cep>
+   <logradouro></logradouro>
+   <numero></numero>
+   <complemento></complemento>
+   <bairro></bairro><cidade>
+   </cidade><estado></estado>
+   <pais></pais></endereco>
+   </clientXML>
+</clientXML>

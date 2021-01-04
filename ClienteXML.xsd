@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
+
+	<xs:element name="clientXML" type="Clientes"/>
+
+	<xs:complexType name="Clientes">
+		<xs:sequence>
+			<xs:element name="clientXML" type="xmlCliente" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="xmlCliente">
+		<xs:sequence>
+			<xs:element name="nome" type="xs:string"/>
+			<xs:element name="cpf" type="xs:string"/>
+			<xs:element name="identidade" type="xs:string" minOccurs="0"/>
+			<xs:element name="telefone" type="xs:string" minOccurs="0"/>
+			<xs:element name="email" type="xs:string" minOccurs="0"/>
+			<xs:element name="endereco" type="xmlEndereco" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="xmlEndereco">
+		<xs:sequence>
+			<xs:element name="cep" type="xs:string" minOccurs="0"/>
+			<xs:element name="logradouro" type="xs:string" minOccurs="0"/>
+			<xs:element name="numero" type="xs:string" minOccurs="0"/>
+			<xs:element name="complemento" type="xs:string" minOccurs="0"/>
+			<xs:element name="bairro" type="xs:string" minOccurs="0"/>
+			<xs:element name="cidade" type="xs:string" minOccurs="0"/>
+			<xs:element name="estado" type="xs:string" minOccurs="0"/>
+			<xs:element name="pais" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
